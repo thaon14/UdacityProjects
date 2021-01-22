@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <title>Make Something Nou</title>
     </head>
 <body>
-    <div class="main-content-grid">
-        <nav>
-            <div class="logo">
-                <h1>Nou's Blog</h1>
-            </div>
+    <nav class="main-nav">
+        <div class="nav-wrapper">
+            <h1>Nou's Blog</h1>
             <ul class="nav-list">
                 <li class="nav-item nav-item-1"><a href="index.html">Home</a></li>
                 <li class="nav-item nav-item-2"><a href="blog.html">Blog</a></li>
                 <li class="nav-item nav-item-3"><a href="aboutme.html">About Me</a></li>
                 <li class="nav-item nav-item-4"><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <main class="main-content">
+        </div>
+    </nav>
+    <!-- Main Content Container -->
+    <div class="content-wrapper">
+        <main class="main-content-1">
             <article class="blog-details">
-                <h2>Blog Title</h2>
-                <p class="blog_author">Blog Author</p>
-                <p class="blog-desc"></p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2>Blog Title 1</h2>
+                <p class="blog_author">Blog Author 1</p>
+                <p class="blog-desc">Lorem ipsum dolor sit amet consectetur..</p>
+            </article>
+            <a href="#" class="btn">Read More</a>
+        </main>
+        <main class="main-content-2">
+            <article class="blog-details">
+                <h2>Blog Title 2</h2>
+                <p class="blog_author">Blog Author 2</p>
+                <p class="blog-desc">Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="#" class="btn">Read More</a>
             </article>
         </main>
-        <aside class="side-content-1">
+        <!-- <aside class="side-content-1">
             <article class="blog-details">
                 <h2>Blog Title</h2>
                 <p class="blog_author">Blog Author</p>
@@ -39,17 +49,15 @@
                 <p class="blog_author">Blog Author</p>
                 <p class="blog-desc"></p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </article>
-        </aside>
-        <footer class="footer">
-            <ul class="footer-nav">
-                <li class="footer-nav footer-nav-item"><a href="index.html">Home</a></li>
-                <li class="footer-nav footer-nav-item"><a href="blog.html">Blog</a></li>
-                <li class="footer-nav footer-nav-item"><a href="aboutme.html">About Me</a></li>
-                <li class="footer-nav footer-nav-item"><a href="contact.html">Contact</a></li>
-            </ul>
-            <br/>
-            <p>Copyright 2021</p>
-        </footer>
+        </aside> -->
     </div>
+        <footer class="footer">
+            <ul class="footer-wrapper">
+                <li class="footer-nav-item"><a href="index.html">Home</a></li>
+                <li class="footer-nav-item"><a href="blog.html">Blog</a></li>
+                <li class="footer-nav-item"><a href="aboutme.html">About Me</a></li>
+                <li class="footer-nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </footer>
 </body>
 </html>
