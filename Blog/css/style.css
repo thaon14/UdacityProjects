@@ -78,10 +78,9 @@ a:link {
 .main-content-1 {
     grid-area: main-content-1;
     min-height: 400px;
-    background: url(img/pexels-kaboompics-com-5836.jpg);
+    background: url(../img/pexels-kaboompics-com-5836.jpg);
     background-size: cover;
     background-position: center;
-    background-color: green;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -93,10 +92,9 @@ a:link {
 .main-content-2 {
     grid-area: main-content-2;
     min-height: 400px;
-    background: url(img/pexels-zaksheuskaya-1616403.jpg);
+    background: url(../img/pexels-zaksheuskaya-1616403.jpg);
     background-size: cover;
     background-position: center;
-    background-color: lightgreen;
     padding: 3rem;
     display: flex;
     flex-direction: column;
