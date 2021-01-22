@@ -89,7 +89,7 @@ a:link {
     flex-direction: column;
     align-items: start;
     justify-content: flex-end;
-    box-shadow:  5px 10px #888888;
+    box-shadow: 0 0 20px -10px;
 }
 
 .main-content-2 {
@@ -103,7 +103,7 @@ a:link {
     flex-direction: column;
     align-items: start;
     justify-content: flex-end;
-    box-shadow:  5px 10px #888888;
+    box-shadow: 0 0 20px -10px;
 }
 
 .main-content-3 {
@@ -117,7 +117,7 @@ a:link {
     flex-direction: column;
     align-items: start;
     justify-content: flex-end;
-    box-shadow:  5px 10px #888888;
+    box-shadow: 0 0 20px -10px;
 }
 
 .main-content-4 {
@@ -131,11 +131,11 @@ a:link {
     flex-direction: column;
     align-items: start;
     justify-content: flex-end;
-    box-shadow:  5px 10px #888888;
+    box-shadow: 0 0 20px -10px;
 }
 
 .blog-details h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
     color: white;
     background-color:rgba(20,20,20, .5);
@@ -143,11 +143,14 @@ a:link {
 
 .blog-details p {
     font-size: 1rem;
-    margin-top: 0;
+    margin: 0px 0px 10px 0px;
     color: white;
     background-color:rgba(20,20,20, .5);
 }
 
+.blog_author {
+    font-style: italic;
+}
 
 /* Footer */
 .footer {
