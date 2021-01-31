@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/subPages.css">
+        <link rel="stylesheet" href="css/blogstyle.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Make Something Nou</title>
     </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-wrapper">
-            <h1 class="logo">Make Something <span style="color:red">Nou</span></h1>
-            <ul class="nav-list">
-                <li><a class="current" href="index.html">Home</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="contactme.html">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="nav-container">
+        <h1 id="logo">Make Something Nou</span></h1>
+        <ul class="nav-list">
+            <li><a href="index2.html">Home</a></li>
+            <li><a class="current" href="blogs.html">Blogs</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
-    <!-- Blogs Content Container -->
-    <div class="landing-page-blog-wrapper">
-        <main class="main-content">
-            <article class="blog-details">
-                <h1 class="blog-title">Blog Title</h1>
-                <p class="blog-author">by Author</p>
-                <p style="font-size: .8rem;">published 1/20/2021</p>
-                <ul class="socials">
-                    <li class="fa fa-facebook"><a href="#"></a></li>
-                    <li class="fa fa-instagram"><a href="#"></a></li>
-                    <li class="fa fa-pinterest"><a href="#"></a></li>
-                </ul>
-                <img src="../img/pexels-kaboompics-com-5836.jpg" alt="blog-artist-1">
+    <div class="main-container">
+        <main id="main-content-card">
+            <div class="main-blog-details">
+                <h1 id="blog-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt est debitis nesciunt sed, amet molestias?</h1>
+                <h2 id="blog-author">by Author</h2>
+                
+                <p id="published">published 1/20/2021</p>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, inventore culpa. Voluptatum quos totam aperiam quasi officiis laborum, similique ipsa! <span style="font-weight:bold;color:black;">Exercitationem ex omnis"</span> quo debitis repellat, ipsam iste, explicabo reiciendis quis maxime velit natus dolorem harum veniam laborum consectetur modi quod! Eligendi, hic quae architecto nesciunt in optio fugiat magni corporis possimus, ad quis, nobis ducimus saepe voluptate. Consequuntur reiciendis pariatur quasi praesentium <span style="text-decoration: underline; text-decoration-color: red;">ipsa placeat quod delectus dignissimos atque!</span> Iure similique porro laudantium nesciunt fuga aperiam dolores quibusdam doloremque et optio, at perspiciatis voluptatum quasi quam totam commodi. Quo inventore ad in doloribus explicabo quasi commodi minima dolorum magni optio.</p>
+                <figure>
+                    <img id="main-img" src="../img/pexels-kaboompics-com-5836.jpg" alt="main-blog-img-1">
+                    <figcaption>Fig.1 - Yellow Painting.</figcaption>
+                </figure>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, inventore culpa. Voluptatum quos totam aperiam quasi officiis laborum, similique ipsa! <span class="font-style-strong">Exercitationem ex omnis"</span> quo debitis repellat, ipsam iste, explicabo reiciendis quis maxime velit natus dolorem harum veniam laborum consectetur modi quod! Eligendi, hic quae architecto nesciunt in optio fugiat magni corporis possimus, ad quis, nobis ducimus saepe voluptate. Consequuntur reiciendis pariatur quasi praesentium <span class="underline">ipsa placeat quod delectus dignissimos atque!</span> Iure similique porro laudantium nesciunt fuga aperiam dolores quibusdam doloremque et optio, at perspiciatis voluptatum quasi quam totam commodi. Quo inventore ad in doloribus explicabo quasi commodi minima dolorum magni optio.</p>
 
                 <hr class="linebreak"/>
 
@@ -41,27 +38,43 @@
 
                 <hr class="linebreak"/>
 
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta consectetur animi eum exercitationem recusandae vel, quibusdam ex necessitatibus id nam ipsa impedit tempore excepturi laudantium officia non vitae <span style="text-decoration: underline; text-decoration-color: red;">aperiam odit natus enim sunt.</span> Fugiat officia id quisquam aperiam eos. Voluptatum rem quos labore odit aliquid animi maxime nisi nemo possimus, sed nulla. Mollitia sunt tempore non repudiandae repellendus vel!</P>
-            </article>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta consectetur animi eum exercitationem recusandae vel, quibusdam ex necessitatibus id nam ipsa impedit tempore excepturi laudantium officia non vitae <span class="underline">aperiam odit natus enim sunt.</span> Fugiat officia id quisquam aperiam eos. Voluptatum rem quos labore odit aliquid animi maxime nisi nemo possimus, sed nulla. Mollitia sunt tempore non repudiandae repellendus vel!Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus ipsum optio ipsam </p>
+            </div>
         </main>
-        <aside class="side">
-            <form action="#" class="form">
-            <h1>Sign up for updates</h1>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" value=""><br><br>
-                <input type="button" value="SUBSCRIBE">
-              </form>
+        <aside class="about-me-container">
+            <div class="about-me-card">
+                <img id="about-me-img" src="../img/pexels-akwice-3094799.jpg" alt="blog-owner">
+                <h2 id="about-me-name">Nou</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt exercitationem architecto iste eum magnam at doloribus odio blanditiis omnis eos id consequatur consectetur accusamus obcaecati nesciunt, dignissimos, repellat perferendis est similique aspernatur distinctio reiciendis.</p>
+
+                <br>
+                <hr />
+                <br>
+
+                <p>Follow me on my socials</p>
+                <ul class="socials">
+                    <li class="fa fa-facebook"><a href="#"></a></li>
+                    <li class="fa fa-twitter"><a href="#"></a></li>
+                    <li class="fa fa-linkedin"><a href="#"></a></li>
+                    <li class="fa fa-instagram"><a href="#"></a></li>
+                </ul>
+            </div>
         </aside>
+        <footer class="footer-container">
+            <div class="about-footer">
+                <h3>Make Something Nou</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi aut quas maiores magnam, fugiat excepturi facilis earum ut ab harum ea esse id maxime minima?</p>
+                
+                <hr />
+
+                <ul class="socials">
+                    <li class="fa fa-facebook"><a href="#"></a></li>
+                    <li class="fa fa-twitter"><a href="#"></a></li>
+                    <li class="fa fa-linkedin"><a href="#"></a></li>
+                    <li class="fa fa-instagram"><a href="#"></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <ul class="footer-wrapper">
-            <li class="fa fa-facebook"><a href="#"></a></li>
-            <li class="fa fa-twitter"><a href="#"></a></li>
-            <li class="fa fa-linkedin"><a href="#"></a></li>
-            <li class="fa fa-youtube"><a href="#"></a></li>
-        </ul>
-    </footer>
 </body>
 </html>
