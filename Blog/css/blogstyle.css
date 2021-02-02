@@ -88,7 +88,7 @@ a:hover {
     grid-gap: 1.5rem;
 }
 
-#main-content-card {
+.main-content-card {
     grid-area: main;
     padding-top: 8px;
     background-color: #fff;
@@ -246,8 +246,14 @@ a:hover {
     border-radius: 30px;
 }
 
+#about-me-desc {
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 12px;
+}
+
 /* Media Query*/
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:600px) {
     .main-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr .4fr .4fr;
@@ -257,6 +263,21 @@ a:hover {
         "footer";
         grid-gap: 16px;
     }
+
+    #blog-title {
+        font-size: 1.4rem;
+    }
+    
+    #blog-author {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+    
+    #published {
+        font-size: .8rem;
+        padding-bottom: 6px;
+    }
+    
 
     .nav-container {
         display: grid;
@@ -326,10 +347,6 @@ a:hover {
         height: 100vh;
     }
 
-    .latest {
-        height: 100px;
-    }
-
     .footer-container {
         grid-template-areas:
         "footer footer footer footer footer";
@@ -364,4 +381,81 @@ a:hover {
         margin: 0px 2px;
         cursor: pointer;
       }
+}
+
+@media only screen and (min-width:600px) and (max-width:1000px) {
+
+    .main-container {
+        grid-template-columns: 1fr .3fr;
+        grid-template-rows: 1fr .4fr;
+        grid-template-areas: 
+        "main aboutme"
+        "footer footer";
+        grid-gap: 2px;
+    }
+
+    .main-content-card {
+        padding: 10px;
+        margin: 10px 0px 10px 12px;
+    }
+
+    .about-me-container {
+        margin: 4px;
+        padding: 0px 4px;
+    }
+
+    .about-me-card {
+        width:275px;
+        margin: 8px;
+    }
+
+    #about-me-card > *{
+        font-size: 12px;
+    }
+
+    #blog-author {
+        font-size: 1rem;
+    }
+
+    #published {
+        font-size: .8rem;
+    }
+
+    .main-blog-details {
+        font-size: .6rem;
+    }
+    
+    .main-blog-details p {
+        line-height: 1.6rem;
+        font-size: .9rem;
+    }
+    
+    .quote {
+        width: 80%;
+        margin: auto;
+        line-height: 1.8rem;
+        font-size: 1rem;
+        font-style: italic;
+        padding: 6px 0px 6px 0px;
+    }
+
+    #about-me-desc {
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: .8rem;
+        padding: 12px;
+    }
+
+    .socials {
+        padding-top: 6px;
+    }
+
+    .nav-container {
+        display: flex;
+    }
+
+    #logo {
+        width: 100%;
+        padding: 0px 0px 0px 10px;
+    }
 }
