@@ -1,0 +1,51 @@
+/* Nav Container and Nav List*/
+.nav-container {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-areas:
+    "nav-side1 logo nav list nav-side2";
+    padding-top: 10px;
+}
+
+#logo {
+    grid-area: logo;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav {
+    grid-area: nav;
+    background: white;
+}
+
+.nav-list {
+    grid-area: list;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    padding: .2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.current {
+    font-weight: bold;
+    color: red;
+}
+
+.current a {
+    color: white;
+}

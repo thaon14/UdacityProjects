@@ -1,3 +1,6 @@
+@import "nav.css";
+@import "footer.css";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,76 +12,8 @@ html, body {
     background-color: #eee;
 }
 
-/* Nav Container and Nav List*/
-.nav-container {
-    display: grid;
-    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-    grid-template-areas:
-    "nav-side1 logo nav-mid list nav-side2";
-    padding-top: 10px;
-}
-
-#logo {
-    grid-area: logo;
-    text-transform: uppercase;
-    color: black;
-}
-
-nav {
-    grid-area: nav;
-    background: white;
-}
-
-.nav-list {
-    grid-area: list;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2px;
-    flex-basis: 100%;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.nav-list a {
-    text-decoration: none;
-    padding: .2rem;
-}
-
-li {
-    list-style-type: none;
-}
-
-a:hover {
-    opacity: 0.7;
-}
-
-.current {
-    font-weight: bold;
-    color: red;
-}
-
-.current a {
-    color: white;
-}
-
-.btn {
-    background-color: black;
-    color: white;
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-    top: 12px;
-    font-family: 'Roboto', sans-serif;
-    border: none;
-}
-
-.btn:hover {
-    opacity: 0.7;
-}
-
 /* Content Container */
-.main-container {
+.main-blog-container {
     display: grid;
     grid-template-columns: .4fr 2fr .6fr .6fr;
     grid-template-areas:
@@ -101,22 +36,25 @@ a:hover {
     width: 100%;
 }
 
-.main-blog-details {
+.main-blog1-details {
     font-size: .8rem;
 }
 
-.main-blog-details p {
+.main-blog1-details p {
     line-height: 2rem;
     font-size: 1rem;
+    color: black;
 }
 
-#blog-title {
+#blog1-title {
     font-size: 1.8rem;
 }
 
-#blog-author {
+#blog1-author {
     margin-top: 10px;
     font-size: 1.4rem;
+    color: black;
+    font-style: italic;
 }
 
 #linebreak {
@@ -137,16 +75,6 @@ a:hover {
     padding: 6px 0px 6px 0px;
 }
 
-.font-style-strong {
-    font-weight: 800;
-}
-
-.underline {
-    text-decoration: underline;
-    text-decoration-color: #ff3333;
-    font-weight: 800;
-}
-
 /* Aside About Me */
 .about-me-container {
     grid-area: aboutme;
@@ -162,19 +90,19 @@ a:hover {
     box-shadow: 0 0 20px -10px;
 }
 
+.about-me-desc {
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 12px;
+    color: black;
+}
+
+.about-me-card p {
+    color: black;
+}
+
 #about-me-img {
     width: 100%;
-}
-
-.about-me h1 {
-    padding: 10px;
-}
-
-.about-me li {
-    padding: 10px;
-}
-.about-me li:hover {
-    color: red;
 }
 
 #about-me-name {
@@ -183,29 +111,9 @@ a:hover {
     padding: 10px;
 }
 
-/* Footer */
-.footer-container {
-    grid-area: footer;
-    background: black;
-    display: grid;
-    grid-template-areas: 
-    "footer1 footer2 footer3 footer4 footer5";
-    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-}
-
-.about-footer {
-    grid-area: footer2;
-    padding-top: 10px;
-    color: white;
-}
-
-.about-footer p {
-    font-size: .8rem;
-}
-
 /* Socials */
 .socials {
-    padding-top: 22px;
+    padding-top: 4px 0px 4px 0px;
 }
 
 .fa {
@@ -246,15 +154,10 @@ a:hover {
     border-radius: 30px;
 }
 
-#about-me-desc {
-    text-align: center;
-    line-height: 1.2rem;
-    padding: 12px;
-}
 
 /* Media Query*/
 @media only screen and (max-width:600px) {
-    .main-container {
+    .main-blog-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr .4fr .4fr;
         grid-template-areas: 
@@ -268,7 +171,7 @@ a:hover {
         font-size: 1.4rem;
     }
     
-    #blog-author {
+    #blog1-author {
         margin-top: 10px;
         font-size: 1.2rem;
     }
@@ -315,15 +218,15 @@ a:hover {
         font-size: 1.4rem;
     }
     
-    #blog-author {
+    #blog1-author {
         font-size: 1rem;
     }
 
-    .main-blog-details {
+    .main-blog1-details {
         font-size: .6rem;
     }
     
-    .main-blog-details p {
+    .main-blog1-details p {
         line-height: 1.6rem;
         font-size: .9rem;
     }
@@ -385,7 +288,7 @@ a:hover {
 
 @media only screen and (min-width:600px) and (max-width:1000px) {
 
-    .main-container {
+    .main-blog-container {
         grid-template-columns: 1fr .3fr;
         grid-template-rows: 1fr .4fr;
         grid-template-areas: 
@@ -409,11 +312,12 @@ a:hover {
         margin: 8px;
     }
 
-    #about-me-card > *{
+    .about-me-card > *{
         font-size: 12px;
+        color: black;
     }
 
-    #blog-author {
+    #blog1-author {
         font-size: 1rem;
     }
 
@@ -421,11 +325,11 @@ a:hover {
         font-size: .8rem;
     }
 
-    .main-blog-details {
+    .main-blog1-details {
         font-size: .6rem;
     }
     
-    .main-blog-details p {
+    .main-blog1-details p {
         line-height: 1.6rem;
         font-size: .9rem;
     }
@@ -439,11 +343,12 @@ a:hover {
         padding: 6px 0px 6px 0px;
     }
 
-    #about-me-desc {
+    .about-me-desc {
         text-align: center;
         line-height: 1.2rem;
         font-size: .8rem;
         padding: 12px;
+        color: black;
     }
 
     .socials {

@@ -1,3 +1,7 @@
+@import "nav.css";
+@import "footer.css";
+@import "blog.css";
+
 *{
     margin: 0px;
     padding: 0px;
@@ -21,59 +25,6 @@ html, body {
     "sec-side sec-cont1 sec-cont2 sec-cont3 sec-side2"
     "footer footer footer footer footer";
     grid-gap: .5rem;
-}
-
-/* Nav Container and Nav List*/
-#nav-container {
-    display: grid;
-    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-    grid-template-areas:
-    "nav-side1 logo nav list nav-side2";
-    padding-top: 10px;
-}
-
-
-#logo {
-    grid-area: logo;
-    text-transform: uppercase;
-    color: black;
-}
-
-nav {
-    grid-area: nav;
-    background: white;
-}
-
-.nav-list {
-    grid-area: list;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2px;
-    flex-basis: 100%;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.nav-list a {
-    text-decoration: none;
-    padding: .2rem;
-}
-
-li {
-    list-style-type: none;
-}
-
-a:hover {
-    opacity: 0.7;
-}
-
-.current {
-    font-weight: bold;
-    color: red;
-}
-
-.current a {
-    color: white;
 }
 
 /* Content Blog Details */
@@ -196,69 +147,6 @@ a:hover {
 .underline {
     text-decoration: underline;
     color: #ff3333;
-}
-
-/* Footer */
-.footer-container {
-    grid-area: footer;
-    background: black;
-    display: grid;
-    grid-template-areas: 
-    "footer1 footer2 footer3 footer4 footer5";
-    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-}
-
-.about-footer {
-    grid-area: footer2;
-    padding-top: 10px;
-    color: white;
-}
-
-.about-footer p {
-    font-size: .8rem;
-}
-
-/* Socials */
-.socials {
-    padding-top: 22px;
-}
-
-.fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    cursor: pointer;
-  }
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #cb2027;
-    color: white;
-    border-radius: 30px;
-}
-
-.fa-instagram {
-    background: #cb2027;
-    color: white;
-    border-radius: 30px;
-}
-
-.fa-twitter {
-    background: #cb2027;
-    color: white;
-    border-radius: 30px;
-}
-
-.fa-linkedin {
-    background: #cb2027;
-    color: white;
-    border-radius: 30px;
 }
 
 /* Media Query small screen */
